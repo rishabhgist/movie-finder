@@ -1,0 +1,73 @@
+.dashboard {
+    background-color: #000;
+    height: 100vh;
+    padding: 20px;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.container{
+    padding: 20px ;
+    color: #fff;
+}
+.main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.movie-container{
+    display: flex;
+    flex-direction: column;
+}
+.movie-container .album{
+    width: 220px;
+    height: 150px;
+    border-radius: 10px;
+}
+.movie-info span{
+    margin-right: 15px;
+}
+.title{
+    text-transform: capitalize;
+}
+.rating img{
+    width: 20px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+/* P3 */
+.search-box{
+    width: fit-content;
+    padding: 5px 30px;
+    border: 1px solid #A6344D;
+    border-radius: 5px;
+}
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+}
+button{
+    background-color: #A6344D;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .3s;
+}
+button:hover{
+    outline: none;
+}
+button:active{
+    outline: none;
+    transform: translateY(5px);
+}

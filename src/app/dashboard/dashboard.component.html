@@ -1,0 +1,22 @@
+<div class="dashboard">
+    <h2>Trending Movies</h2>
+    <div class="search-box">
+        <input type="text" [(ngModel)] = "searchMovie" placeholder="Search">
+        <button (click)="search()">Go</button>
+        <button (click)="clear()">Clear</button>
+    </div>
+    <div class="main">
+        <div class="container gird-item" *ngFor="let movie of movies">
+            <div class="movie-container">
+                <div><img src="../../assets/images/{{movie.movieTitle}}.jpg" alt="Not found" class="album"></div>
+                <div><span class="rating"><img src="../../assets/images/rating.jpg" alt=""></span><span>{{movie.rating}}</span>
+                </div>
+                <div class="movie-info">
+                    <span class="title">{{movie.movieTitle}}</span>
+                    <span>{{movie.yearOfRelease}}</span>
+                    <span>{{movie.genre}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
